@@ -1,7 +1,10 @@
 cow:
   image: cow_in_docker
   volumes:
-     - ./rc:/root/.cow/rc
+     - ./rc:/usr/local/app/rc
   ports:
           - "7777:7777/tcp"
+  environments:
+          - "DEBUG=true"
+          - "COW_PATH=/usr/local/app/rc"
   restart: always
