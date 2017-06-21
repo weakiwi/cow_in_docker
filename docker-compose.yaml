@@ -5,6 +5,6 @@ cow:
   ports:
           - "7777:7777/tcp"
   environment:
-          - "DEBUG=true"
-          - "COW_PATH=/usr/local/app/rc"
+          - DEBUG=true
+          - COW_PATH=/usr/local/app/rc
   restart: always

@@ -2,7 +2,7 @@
 
 tmp_debug=""
 tmp_path=""
-if [[ "${DEBUG}x" == "true"x ]]
+if [[ -z "${DEBUG}" ]]
 then
         tmp_debug="-debug"
 fi
