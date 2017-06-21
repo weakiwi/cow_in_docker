@@ -1,0 +1,7 @@
+cow:
+  image: cow_in_docker
+  volumes:
+     - ./rc:/root/.cow/rc
+  ports:
+          - "7777:7777/tcp"
+  restart: always
