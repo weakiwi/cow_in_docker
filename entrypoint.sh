@@ -9,4 +9,4 @@ if [[ -z "${COW_PATH}" ]]
 then
 export COW_PATH="-rc ${COW_PATH}"
 fi
-/usr/local/cow "${DEBUG}" "${COW_PATH}"
+/usr/local/app/cow "${DEBUG}" "${COW_PATH}"

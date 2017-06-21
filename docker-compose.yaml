@@ -4,7 +4,7 @@ cow:
      - ./rc:/usr/local/app/rc
   ports:
           - "7777:7777/tcp"
-  environments:
+  environment:
           - "DEBUG=true"
           - "COW_PATH=/usr/local/app/rc"
   restart: always
