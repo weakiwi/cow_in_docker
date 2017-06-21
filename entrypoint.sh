@@ -1,12 +1,14 @@
 #!/bin/sh
 
+tmp_debug=""
+tmp_path=""
 if [[ "${DEBUG}x" == "true"x ]]
 then
-export DEBUG="-debug"
+        tmp_debug="-debug"
 fi
 
 if [[ -z "${COW_PATH}" ]]
 then
-export COW_PATH="-rc ${COW_PATH}"
+        tmp_path="-rc ${COW_PATH}"
 fi
-/usr/local/app/cow "${DEBUG}" "${COW_PATH}"
+/usr/local/app/cow $tmp_path $tmp_debug
