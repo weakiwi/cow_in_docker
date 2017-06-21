@@ -2,12 +2,12 @@
 
 tmp_debug=""
 tmp_path=""
-if [[ -z "${DEBUG}" ]]
+if [[ -n "${DEBUG}" ]]
 then
         tmp_debug="-debug"
 fi
 
-if [[ -z "${COW_PATH}" ]]
+if [[ -n "${COW_PATH}" ]]
 then
         tmp_path="-rc ${COW_PATH}"
 fi
