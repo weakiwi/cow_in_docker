@@ -5,5 +5,5 @@ RUN chmod 777 /usr/local/app/entrypoint.sh
 RUN apk add --update curl
 RUN curl -L git.io/cow | sh
 RUN apk del curl
-RUN apk update && apk add --update openssh-client
+RUN apk add openssh
 ENTRYPOINT "/usr/local/app/entrypoint.sh"
